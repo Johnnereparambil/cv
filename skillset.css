@@ -1,0 +1,42 @@
+.skillContainer {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  padding-right: 10px;
+}
+
+.skillsLeft {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  padding-left: 40px;
+}
+
+.skills90 {
+    width: 90%;
+    background-color: #198900;
+}
+
+.skills75 {
+    width: 75%;
+    background-color: #777100;
+}
+
+.skills70 {
+    width: 70%;
+    background-color: #DF9932;
+}
+
+.skilltilepadding {
+    padding-top:20px;
+}
+.skillpaddingLeft{
+  padding-left: 20px;
+}
