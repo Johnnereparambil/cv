@@ -153,3 +153,88 @@ margin-bottom: 2px;
   position: relative;
   display: inline-block;
 }
+
+/* Language proficiency section */
+.language-section {
+    padding: 15px 0 35px;
+}
+
+.language-container {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 0 25px;
+}
+
+.language-item {
+    margin-bottom: 25px;
+}
+
+.language-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.language-name {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+}
+
+.language-type {
+    font-size: 13px;
+    color: #777;
+}
+
+.language-track {
+    width: 100%;
+    height: 12px;
+    background: #e9edf2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.language-fill {
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.6s ease;
+}
+
+/* Different colours for each language */
+.language-fill.native {
+    background: #263b80;
+}
+
+.language-fill.english {
+    background: #3478db;
+}
+
+.language-fill.german {
+    background: #e0a12b;
+}
+
+.language-fill.tamil {
+    background: #2c9b75;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+    .language-container {
+        padding: 0 20px;
+        margin-top: 15px;
+    }
+
+    .language-name {
+        font-size: 15px;
+    }
+
+    .language-type {
+        font-size: 12px;
+    }
+
+    .language-item {
+        margin-bottom: 22px;
+    }
+}
+
