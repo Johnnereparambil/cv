@@ -1,367 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>John Jose | IT Support & Data Analytics</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>Contact-John Jose</title>
+  <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width" />
 
-    <meta name="description" content="John Jose — IT professional specialising in system administration, technical support, server management, networking and data analytics.">
+    <script src="modernizr-2.6.2.js"></script>
 
-    <link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Bootstrap 3 -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-
-    <!-- Existing website stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="myWork.css">
-
-    <!-- Homepage-specific styles -->
-    <style>
-        /* Homepage layout */
-        .jj-home-hero {
-            padding: 30px 15px 45px;
-            overflow: hidden;
-        }
-
-        .jj-home-content {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 35px;
-        }
-
-        .jj-home-text {
-            flex: 1 1 52%;
-            min-width: 0;
-            color: inherit;
-            font-size: 17px;
-            line-height: 1.9;
-        }
-
-        .jj-home-text p {
-            margin: 0 0 20px;
-        }
-
-        .jj-home-text .jj-home-cta {
-            font-weight: 600;
-        }
-
-        /* Technology illustration panel */
-        .jj-home-graphics {
-            position: relative;
-            flex: 0 1 440px;
-            width: 100%;
-            max-width: 440px;
-            height: 410px;
-            min-width: 0;
-            margin: 0 auto;
-            overflow: hidden;
-            border-radius: 24px;
-            background:
-                radial-gradient(circle at center,
-                    rgba(0, 195, 255, 0.19), transparent 48%),
-                linear-gradient(145deg, #142542, #07101e);
-            border: 1px solid rgba(71, 201, 255, 0.45);
-            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
-            isolation: isolate;
-        }
-
-        .jj-home-graphics *,
-        .jj-home-graphics *::before,
-        .jj-home-graphics *::after {
-            box-sizing: border-box;
-        }
-
-        /* Decorative orbit rings */
-        .jj-home-orbit {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            border: 1px solid rgba(69, 205, 255, 0.28);
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-        }
-
-        .jj-home-orbit-one {
-            width: 215px;
-            height: 215px;
-        }
-
-        .jj-home-orbit-two {
-            width: 320px;
-            height: 320px;
-            border-style: dashed;
-        }
-
-        /* Central IT badge */
-        .jj-home-core {
-            position: absolute;
-            z-index: 2;
-            top: 50%;
-            left: 50%;
-            width: 125px;
-            height: 125px;
-            transform: translate(-50%, -50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            border-radius: 50%;
-            color: #ffffff;
-            background: linear-gradient(145deg, #15527b, #14213f);
-            border: 2px solid #49d8ff;
-            box-shadow: 0 0 30px rgba(0, 195, 255, 0.3);
-        }
-
-        .jj-home-core-main {
-            font-size: 37px;
-            line-height: 1;
-            font-weight: 800;
-            letter-spacing: 3px;
-        }
-
-        .jj-home-core-caption {
-            color: #9beaff;
-            font-size: 9px;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-
-        /* Technology cards */
-        .jj-home-tech {
-            position: absolute;
-            z-index: 3;
-            width: 108px;
-            min-height: 83px;
-            padding: 10px 5px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 7px;
-            border: 1px solid rgba(91, 214, 255, 0.65);
-            border-radius: 14px;
-            background: rgba(18, 39, 66, 0.97);
-            color: #ffffff;
-            text-align: center;
-            font-size: 12px;
-            font-weight: 600;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
-        }
-
-        .jj-home-tech-symbol {
-            display: block;
-            color: #60ddff;
-            font-size: 27px;
-            line-height: 1.2;
-            font-weight: bold;
-        }
-
-        .jj-home-server {
-            top: 25px;
-            left: 22px;
-        }
-
-        .jj-home-network {
-            top: 25px;
-            right: 22px;
-        }
-
-        .jj-home-cloud {
-            top: 50%;
-            right: 10px;
-            transform: translateY(-50%);
-        }
-
-        .jj-home-database {
-            bottom: 25px;
-            left: 22px;
-        }
-
-        .jj-home-chart {
-            bottom: 25px;
-            right: 22px;
-        }
-
-        .jj-home-code {
-            top: 50%;
-            left: 10px;
-            transform: translateY(-50%);
-        }
-
-        /* Subtle hover effect */
-        .jj-home-tech {
-            transition: transform 0.2s ease,
-                        border-color 0.2s ease,
-                        box-shadow 0.2s ease;
-        }
-
-        .jj-home-server:hover,
-        .jj-home-network:hover,
-        .jj-home-database:hover,
-        .jj-home-chart:hover {
-            transform: translateY(-3px);
-            border-color: #9cecff;
-            box-shadow: 0 0 20px rgba(0, 195, 255, 0.2);
-        }
-
-        .jj-home-cloud:hover,
-        .jj-home-code:hover {
-            transform: translateY(calc(-50% - 3px));
-            border-color: #9cecff;
-        }
-
-        /* Responsive layout */
-        @media (max-width: 767px) {
-            .jj-home-hero {
-                padding: 20px 15px 35px;
-            }
-
-            .jj-home-content {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 20px;
-            }
-
-            .jj-home-text {
-                font-size: 16px;
-                line-height: 1.8;
-            }
-
-            .jj-home-graphics {
-                flex: none;
-                width: 100%;
-                max-width: 390px;
-                height: 365px;
-            }
-
-            .jj-home-tech {
-                width: 91px;
-                min-height: 72px;
-                font-size: 11px;
-            }
-
-            .jj-home-tech-symbol {
-                font-size: 24px;
-            }
-
-            .jj-home-server {
-                top: 17px;
-                left: 12px;
-            }
-
-            .jj-home-network {
-                top: 17px;
-                right: 12px;
-            }
-
-            .jj-home-database {
-                bottom: 17px;
-                left: 12px;
-            }
-
-            .jj-home-chart {
-                bottom: 17px;
-                right: 12px;
-            }
-
-            .jj-home-code {
-                left: 3px;
-            }
-
-            .jj-home-cloud {
-                right: 3px;
-            }
-
-            .jj-home-orbit-one {
-                width: 190px;
-                height: 190px;
-            }
-
-            .jj-home-orbit-two {
-                width: 275px;
-                height: 275px;
-            }
-
-            .jj-home-core {
-                width: 105px;
-                height: 105px;
-            }
-
-            .jj-home-core-main {
-                font-size: 32px;
-            }
-        }
-
-        @media (max-width: 350px) {
-            .jj-home-graphics {
-                height: 330px;
-            }
-
-            .jj-home-tech {
-                width: 80px;
-                min-height: 66px;
-                font-size: 10px;
-            }
-
-            .jj-home-tech-symbol {
-                font-size: 21px;
-            }
-
-            .jj-home-orbit-two {
-                width: 235px;
-                height: 235px;
-            }
-        }
-    </style>
 </head>
-
 <body>
-
-    <!-- Header and navigation -->
     <header>
-        <div class="contentWrapper clearfix">
-
+        <div class="contentWrapper">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hPadding">
-                <img class="styleJohn"
-                     src="John.png"
-                     alt="John Jose">
+                <img class="styleJohn" src="John.png">
             </div>
-
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hPadding">
-                <nav class="floatRight" aria-label="Main navigation">
+                <nav class="floatRight">
                     <div class="dropdown">
-
-                        <button class="dropbtn"
-                                type="button"
-                                aria-label="Open navigation menu">
-                            <span class="jj-menu-symbol" aria-hidden="true">
-                                &#9776;
-                            </span>
+                        <button class="dropbtn">
+                       <i class='fas fa-bars' style='font-size:24px'></i>
                         </button>
-
                         <div class="dropdownbtninclude listRight">
                             <a href="index.html">Home</a>
                             <a href="Experience.html">Experience</a>
                             <a href="Education.html">Education</a>
                             <a href="Languages.html">Languages</a>
-                            <a href="Contact.html">Contact</a>
-                            <a href="skill.html">Skills</a>
-                            <a href="John%20Jose.pdf"
-                               target="_blank"
-                               rel="noopener noreferrer">Download CV</a>
+<a href="skill.html">Skills</a>
+                              <a href="Contact.html">Contact</a>
+                            <a href="John Jose.pdf" target="_blank" rel="noopener noreferrer">Download</a>
                         </div>
-
                     </div>
                 </nav>
             </div>
-
         </div>
     </header>
 
