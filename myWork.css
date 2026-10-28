@@ -486,3 +486,73 @@ margin-bottom: 2px;
         transition: none;
     }
 }
+/* Background color */
+
+
+/* Restore the original blue-to-turquoise theme */
+
+html,
+body,
+#body {
+    background-color: #7ac0da;
+    background-image: linear-gradient(
+        to right,
+        #7ac0da 0%,
+        #69DFD8 100%
+    );
+    color: #3e5667;
+}
+
+/* Keep the original featured heading gradient */
+.featured .contentWrapper {
+    background-color: #7ac0da;
+    background-image: linear-gradient(
+        to right,
+        #7ac0da 0%,
+        #69DFD8 100%
+    );
+    color: #3e5667;
+}
+
+/* Change the homepage technology panel from dark to light */
+.jj-home-graphics {
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255, 255, 255, 0.9),
+            transparent 55%
+        ),
+        linear-gradient(145deg, #eafaff, #c8f0ed) !important;
+
+    border: 1px solid rgba(62, 86, 103, 0.25);
+    box-shadow: 0 10px 30px rgba(62, 86, 103, 0.15);
+}
+
+/* Light technology cards */
+.jj-home-tech {
+    background: rgba(255, 255, 255, 0.92);
+    color: #3e5667;
+    border: 1px solid rgba(62, 86, 103, 0.25);
+}
+
+.jj-home-tech-symbol {
+    color: #267e9b;
+}
+
+/* Light central IT circle */
+.jj-home-core {
+    background: linear-gradient(145deg, #7ac0da, #69DFD8);
+    border-color: #ffffff;
+    color: #3e5667;
+    box-shadow: 0 0 25px rgba(38, 126, 155, 0.25);
+}
+
+.jj-home-core-caption {
+    color: #244f61;
+}
+
+/* Keep the decorative rings visible */
+.jj-home-orbit {
+    border-color: rgba(38, 126, 155, 0.3);
+}
+
