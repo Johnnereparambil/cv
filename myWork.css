@@ -548,3 +548,50 @@ body,
     border-color: rgba(38, 126, 155, 0.3);
 }
 
+/* Keep homepage text left and graphics right */
+.jj-home-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Text column */
+.jj-home-text {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* Graphics column */
+.jj-home-graphics {
+    flex: 0 0 440px;
+    width: 440px;
+    max-width: 440px;
+    margin: 0;
+}
+
+/* Responsive layout for tablets and phones */
+@media (max-width: 767px) {
+    .jj-home-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .jj-home-text {
+        width: 100%;
+    }
+
+    .jj-home-graphics {
+        flex: none;
+        width: 100%;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+}
+
