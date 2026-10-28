@@ -518,17 +518,6 @@ body,
 }
 
 /* Change the homepage technology panel from dark to light */
-.jj-home-graphics {
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(255, 255, 255, 0.9),
-            transparent 55%
-        ),
-        linear-gradient(145deg, #eafaff, #c8f0ed) !important;
-
-    border: 1px solid rgba(62, 86, 103, 0.25);
-    box-shadow: 0 10px 30px rgba(62, 86, 103, 0.15);
 }
 
 /* Light technology cards */
