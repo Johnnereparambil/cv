@@ -550,7 +550,7 @@ body,
 .jj-home-content {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: normal;
     gap: 10px;
     width: 100%;
     max-width: 1200px;
