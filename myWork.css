@@ -747,3 +747,117 @@ body,
         margin: 8px 0 0;
     }
 }
+/* EXPERIENCE PAGE - MATCH EDUCATION DESIGN */
+
+.jj-experience {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 35px 20px 60px;
+}
+
+.jj-experience .jj-education-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.jj-experience .jj-education-card {
+    background: rgba(250, 253, 255, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-left: 5px solid #35bfc1;
+    border-radius: 14px;
+    padding: 25px 28px;
+    margin-bottom: 22px;
+    box-shadow: 0 6px 20px rgba(25, 65, 85, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.jj-experience .jj-education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(25, 65, 85, 0.18);
+}
+
+.jj-experience .jj-education-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.jj-experience .jj-education-card h2 {
+    color: #203b50;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 7px;
+}
+
+.jj-experience .jj-education-card h3 {
+    color: #278f9c;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+.jj-experience .jj-education-location {
+    color: #667b89;
+    font-size: 13px;
+    margin: 0;
+}
+
+.jj-experience .jj-education-date {
+    display: inline-block;
+    background: #d9f4f1;
+    color: #167e83;
+    border-radius: 20px;
+    padding: 7px 13px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.jj-experience .jj-education-card > p {
+    color: #465d6b;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 12px 0 18px;
+}
+
+.jj-exp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.jj-exp-tags span {
+    display: inline-block;
+    background: #e3f5f5;
+    color: #247d85;
+    border: 1px solid #c5e9e7;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .jj-experience {
+        padding: 25px 12px 40px;
+    }
+
+    .jj-experience .jj-education-card {
+        padding: 20px;
+    }
+
+    .jj-experience .jj-education-top {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .jj-experience .jj-education-date {
+        white-space: normal;
+    }
+
+    .jj-experience .jj-education-card h2 {
+        font-size: 19px;
+    }
+}
